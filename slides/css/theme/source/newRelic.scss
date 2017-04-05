@@ -1,0 +1,83 @@
+/**
+ * White theme for reveal.js. This is the opposite of the 'black' theme.
+ *
+ * Copyright (C) 2015 Hakim El Hattab, http://hakim.se
+ */
+ 
+/**
+ * New Relic theme for reveal.js. This theme was modified from reveal.js's 'white.css'
+ *
+ */
+
+ /** 
+ * CSS variables, need Sass to run them, but it's cool because reveal.js uses Sass already when using Grunt to integrate the css files 
+ * via this page: https://docs.newrelic.com/docs/new-relic-only/advanced-style-guide/design-specifications/color-design-specs#nr_colors
+
+ /* Base Colors 
+$color_orange: #f06049;
+$color_cyan: #96dddd;
+$color_teal: #328787;
+$bg_default: #fefefd;
+$color_bggray: #f1f1f1;
+$fg_inverse: #e9e9e9;
+$color_ltgray: #cccccc;
+$color_mdgray: #888888;
+$grad_inverse: #7c7c7c;
+$color_dkgray: #444444;
+$color_hilite: #ffffd6;
+
+/* Product Colors 
+$pcolor_default: #979797;
+$pcolor_apm: #348899;
+$pcolor_browser: #f28f20;
+$pcolor_insights: #f2bc56;
+$pcolor_logs: #b286bc;
+$pcolor_mobile: #00b6d8;
+$pcolor_ping: #c61e54;
+$pcolor_platform: #7a5aa6;
+$pcolor_server: #226582;
+
+*/
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+// Include theme-specific fonts
+@import url(../../lib/font/source-sans-pro/source-sans-pro.css);
+
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: #fff;
+
+$mainColor: #222;
+$headingColor: #222;
+
+$mainFontSize: 38px;
+$mainFont: 'Source Sans Pro', Helvetica, sans-serif;
+$headingFont: 'Source Sans Pro', Helvetica, sans-serif;
+$headingTextShadow: none;
+$headingLetterSpacing: normal;
+$headingTextTransform: uppercase;
+$headingFontWeight: 600;
+$linkColor: #2a76dd;
+$linkColorHover: lighten( $linkColor, 15% );
+$selectionBackgroundColor: lighten( $linkColor, 25% );
+
+$heading1Size: 2.5em;
+$heading2Size: 1.6em;
+$heading3Size: 1.3em;
+$heading4Size: 1.0em;
+
+section.has-dark-background {
+	&, h1, h2, h3, h4, h5, h6 {
+		color: #fff;
+	}
+}
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------

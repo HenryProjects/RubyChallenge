@@ -1,0 +1,1 @@
+Each exercise in the course has an associated markdown file or folder with a markdown file in it. 
